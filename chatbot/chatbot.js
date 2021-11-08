@@ -383,7 +383,7 @@ SimpleChatbot.resetTemplate = function() {
   if (!$root) {
     return;
   }
-  $root.innerHTML = '<div class="chatbot__title"><span class="chatbot__close"></span>Facebook Chatbot<span class="chatbot__reset"></span></div><div class="chatbot__wrapper"><div class="chatbot__items"></div></div><div class="chatbot__footer"><input class="chatbot__input" type="text" disabled><button class="chatbot__submit" type="button" disabled></button></div>';
+  $root.innerHTML = '<div class="chatbot__title"><span class="chatbot__close"></span> <img src="img/doctor.png" class="ava-header"> Facebook Chat<span class="chatbot__reset"></span></div><div class="chatbot__wrapper"><div class="chatbot__items"><div class="chatbot__ava-content"><img src="img/doctor.png" class="ava-header"><h2>Doctor Name</h2><p>Facebook</p><p>Live in city New York</p></div></div></div><div class="chatbot__inner-text">Теперь вы можете общаться в Messenger</div><div class="chatbot__footer"><i class="fas fa-plus-circle custom-icon"></i> <i class="fas fa-images custom-icon"></i> <i class="fas fa-thumbs-up custom-icon"></i> <i class="fas fa-smile custom-icon"></i> <input class="chatbot__input" type="text" disabled><button class="chatbot__submit" type="button" disabled></button></div>';
 };
 
 // основной шаблон чат-бота
@@ -394,7 +394,7 @@ SimpleChatbot.createTemplate = function() {
   }
   const $fragment = document.createElement('div');
   $fragment.className = 'chatbot chatbot_hidden';
-  $fragment.innerHTML = '<div class="chatbot__title"><span class="chatbot__close"></span>Facebook Chatbot<span class="chatbot__reset"></span></div><div class="chatbot__wrapper"><div class="chatbot__items"></div></div><div class="chatbot__footer"><input class="chatbot__input" type="text" disabled><button class="chatbot__submit" type="button" disabled></button></div>';
+  $fragment.innerHTML = '<div class="chatbot__title"><span class="chatbot__close"></span><img src="img/doctor.png" class="ava-header">Facebook Chat<span class="chatbot__reset"></span></div><div class="chatbot__wrapper"><div class="chatbot__items"><div class="chatbot__ava-content"><img src="img/doctor.png" class="ava-header"><h2>Doctor Name</h2><p>Facebook</p><p>Live in city New York</p></div></div></div><div class="chatbot__inner-text">Теперь вы можете общаться в Messenger</div><div class="chatbot__footer"><i class="fas fa-plus-circle custom-icon"></i> <i class="fas fa-images custom-icon"></i> <i class="fas fa-thumbs-up custom-icon"></i> <i class="fas fa-smile custom-icon"></i> <input class="chatbot__input" type="text" disabled><button class="chatbot__submit" type="button" disabled></button></div>';
   document.body.appendChild($fragment);
   return document.querySelector('.chatbot');
 };

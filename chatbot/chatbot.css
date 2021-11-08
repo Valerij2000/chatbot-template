@@ -1,7 +1,57 @@
 :root {
   --colorblue: #1877f2;
   --colorgreen: #0d9412;
+  --colorgrey: #797a7c;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  font-family: 'Open Sans', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 
 .d-none {
   display: none;
@@ -102,8 +152,10 @@
 .chatbot__title {
   background-color: var(--colorblue);;
   color: #fff;
-  padding: 1rem;
+  padding: .6rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
 }
 
@@ -118,6 +170,14 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23fff' d='M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z'%3E%3C/path%3E%3C/svg%3E");
 }
 
+.ava-header {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
 .chatbot__close:hover {
   opacity: 1;
 }
@@ -125,6 +185,7 @@
 .chatbot__reset {
   width: 20px;
   margin-left: auto;
+  margin-right: 8px;
   height: 20px;
   background: transparent no-repeat center center;
   background-size: 100% 100%;
@@ -151,6 +212,34 @@
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+}
+
+.chatbot__ava-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: var(--colorgrey);
+}
+
+.chatbot__ava-content p, img, h2 {
+  margin: 2px;
+}
+
+.chatbot__ava-content h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.chatbot__ava-content p {
+  font-size: 13px;
+}
+
+.chatbot__inner-text {
+  color: var(--colorgrey);
+  text-align: center;
+  font-size: 13px;
 }
 
 .chatbot__item {
@@ -187,7 +276,7 @@
 
 /* human */
 .chatbot__item_human {
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .chatbot__content_human {
@@ -246,6 +335,16 @@
 .chatbot__footer {
   padding: 0.75rem;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-icon {
+  font-size: 24px;
+  color: #2586e5;
+  cursor: pointer;
+  margin: 4px;
 }
 
 /* ie11 */
@@ -267,7 +366,7 @@
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #e0e0e0;
-  border-radius: 0.25rem;
+  border-radius: 1.25rem;
   transition: border-color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
