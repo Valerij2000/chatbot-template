@@ -37,7 +37,7 @@ function SimpleChatbot(config) {
   } else {
     throw 'SimpleChatbot: ключ replicas должен присутствовать в передаваемых данных';
   }
-  this._url = config['url'] ? config['url'] : '/chatbot/chatbot.php';
+  this._url = config['url'] ? config['url'] : 'chatbot/chatbot.php';
   this._key = config['key'] ? config['key'] : 'fingerprint';
   this._delay = 500;
   // индекс текущей реплики bot
