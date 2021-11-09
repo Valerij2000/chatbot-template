@@ -291,6 +291,8 @@ table {
   background: #cafacc;
   border-radius: 0.5rem;
   text-align: left;
+  position: relative;
+  left: 65px;
 }
 
 /* btn */

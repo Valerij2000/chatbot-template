@@ -26,9 +26,9 @@
     "7": { "content": "Не помогло", "bot": 4 },
     "8": { "content": "Незначительный результат", "bot": 4 },
     "9": { "content": "Вылечил", "bot": 4 },
-    "10": { "content": "10%"},
-    "11": { "content": "17%"},
-    "12": { "content": "28%"},
-    "13": { "content": "40%"}
+    "10": { "content": "10%", "bot": null },
+    "11": { "content": "17%", "bot": null },
+    "12": { "content": "28%", "bot": null },
+    "13": { "content": "40%", "bot": null }
   }
 }
