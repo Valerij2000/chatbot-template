@@ -59,6 +59,7 @@ table {
   flex-direction: column;
   margin: 50px auto;
   width: 80%;
+  border: 3px solid #4b99ff;
   background-color: #fafafa;
   line-height: 1.2;
   color: #212529;
@@ -80,8 +81,8 @@ table {
 }
 
 .chatbot__title {
+  border-radius: 10px 10px 0px 0px;
   background-color: var(--colorblue);
-  border-radius: 10px;
   color: #fff;
   padding: .6rem;
   display: flex;
