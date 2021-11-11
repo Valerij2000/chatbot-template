@@ -103,7 +103,7 @@ SimpleChatbot.prototype._template = function (type, content, state) {
 
 // шаблон кнопки
 SimpleChatbot.prototype._templateBtn = function (botIndex, content) {
-  return '<button class="btn" type="button" data-bot-index="' + botIndex + '">' + content + '</button>';
+  return '<button class="btn_chatbot" type="button" data-bot-index="' + botIndex + '">' + content + '</button>';
 };
 
 // получить данные

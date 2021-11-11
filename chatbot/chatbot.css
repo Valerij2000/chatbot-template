@@ -214,7 +214,7 @@ table {
 }
 
 /* btn */
-.btn {
+.btn_chatbot {
   width: 100%;
   margin: 0;
   font-family: inherit;
@@ -238,17 +238,17 @@ table {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.btn:hover {
+.btn_chatbot:hover {
   background-color: #fef49a;
   border: 1px solid transparent;
 }
 
-.btn:focus,
-.btn.focus {
+.btn_chatbot:focus,
+.btn_chatbot.focus {
   outline: 0;
 }
 
-.chatbot__content .btn {
+.chatbot__content .btn_chatbot {
   margin-bottom: 0.4rem;
 }
 
