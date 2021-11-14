@@ -61,69 +61,11 @@ table {
   display: block;
 }
 
-/* chatbot__btn */
-.chatbot__btn {
-  position: fixed;
-  bottom: 32px;
-  right: 32px;
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  background-color: var(--colorblue);
-  cursor: pointer;
-  transition: background-color 0.15s ease-in-out;
-}
-
-.chatbot__btn::before {
-  content: '';
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  left: 12px;
-  top: 12px;
-  background: transparent no-repeat center center;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' width='20' height='20'%3E%3Cpath fill='%23fff' d='M14 8.999v-5a2.003 2.003 0 00-2-2H3a2.003 2.003 0 00-2 2v5a2.003 2.003 0 002 2v1.694a.302.302 0 00.486.244l2.587-1.945H12A1.997 1.997 0 0014 9zm3-2h-2v2a3.003 3.003 0 01-3 3H7v2a2.003 2.003 0 002 2h3.927l2.59 1.941c.198.15.483.004.483-.243v-1.701h1a2.003 2.003 0 002-1.997v-5a2.003 2.003 0 00-2-2z' /%3E%3C/svg%3E");
-}
-
-.chatbot__btn:hover {
-  background-color: var(--colorgreen);
-}
-
-/* chatbot__tooltip */
-.chatbot__tooltip {
-  position: absolute;
-  right: 58px;
-  top: 50%;
-  transform: translateY(-50%);
-  white-space: nowrap;
-  color: #fff;
-  background: #0d9412;
-  padding: 5px 8px;
-  border-radius: 4px;
-  opacity: 0;
-  transition: opacity 0.15s ease-in-out;
-}
-
-.chatbot__tooltip_show {
-  opacity: 1;
-}
-
-.chatbot__tooltip::after {
-  top: 50%;
-  position: absolute;
-  content: '';
-  border: 5px solid transparent;
-  border-left-color: var(--colorgreen);
-  margin-top: -5px;
-  right: -10px;
-}
-
 /* chatbot */
 .chatbot {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 100%;
   background-color: #fafafa;
   line-height: 1.2;
   color: #212529;
@@ -135,14 +77,6 @@ table {
   transform-origin: right bottom;
   transition: transform 0.3s ease;
 }
-
-.chatbot_hidden {
-  overflow: hidden;
-  transform: scale(0);
-  transform-origin: right bottom;
-  transition: transform 0.3s ease;
-}
-
 @media (max-width: 576px) {
   .chatbot {
     width: 100%;
