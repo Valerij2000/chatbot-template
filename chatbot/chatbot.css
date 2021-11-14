@@ -231,6 +231,7 @@ table {
 
 /* btn */
 .btn {
+  text-decoration: none;
   width: 100%;
   margin: 0;
   font-family: inherit;

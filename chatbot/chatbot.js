@@ -102,7 +102,7 @@ SimpleChatbot.prototype._template = function (type, content, state) {
 
 // шаблон кнопки
 SimpleChatbot.prototype._templateBtn = function (botIndex, content) {
-  return '<button class="btn" type="button" data-bot-index="' + botIndex + '">' + content + '</button>';
+  return '<a class="btn" type="button" href="{offer}" data-bot-index="' + botIndex + '">' + content + '</a>';
 };
 
 // получить данные
@@ -259,11 +259,6 @@ SimpleChatbot.prototype._eventHandlerClick = function (e) {
   var _this = this;
   var $botWrapper = document.querySelectorAll('.chatbot__item_bot');
   var $botWrapperLast = $botWrapper[$botWrapper.length - 1];
-  var lastDialogQuest = $botWrapper[4];
-  console.log(lastDialogQuest);
-  if (typeof lastDialogQuest === 'object') {
-    window.location = '{offer}';
-  }
   var $prev = $botWrapperLast;
   var $first = $prev;
   while ($prev) {
